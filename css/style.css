@@ -44,6 +44,7 @@ body {
     background-attachment: scroll;
     background-size: cover;
     overflow-x: hidden;
+    margin-left: 0;
 }
 
 /** container principal central com efeito vidro **/ 
@@ -65,12 +66,29 @@ body {
    background-color: rgba(0, 0, 0, 0.367);
    position: fixed;
    top: 0;
-   left: 0;
    width: 100%;
-   height: 7%;
-   z-index: 999px;
+   height: 8%;
+   z-index: 1;
    box-shadow: 0px 0px 6px 0px rgba(71, 71, 71, 0.353);
-   text-align: right;
+   display: flex;
+   align-items: center;
+}
+
+/** posicionamento e tamanho do logo do gambito em cima **/
+.box_logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.box_logo img {
+  height: 80%;
+  margin: 0 30px;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
 }
 
 .menu ul li {
@@ -148,17 +166,6 @@ letter-spacing: 1px;
 .box_image {
     margin-top: -400px;
     margin-left: 1010px;
-}
-
-/** posicionamento e tamanho do logo do gambito em cima **/
-.box_logo {
-    display: flex;
-    position: fixed;
-    width: 5%;
-    height: 5%;
-    top: 8px;
-    margin-left: 20px;
-    z-index: 1;
 }
 
 /** configurações das imagens dos pontos turísticos **/
