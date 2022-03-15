@@ -7,39 +7,43 @@
      <title>O Gambito em Berlim</title>
      <link rel="stylesheet" href="./css/style.css">
      <link rel="shortcut icon" href="./images/favicon2.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
      <div class="header">
           <div class="box_logo"> <img src="./images/logo logo.png"></div>
-          <nav class="menu">
+          <nav class="menu" id="menu">
                <ul>
                     <li>
                          <a href="#inicio">Início</a>
                     </li>
                     <li>
-                         <a href="#sobre" >Sobre Berlim</a>
+                         <a href="#sobre">Sobre Berlim</a>
                     </li>
                     <li>
                          <a href="#pontos">Pontos turísticos</a>
                     </li>
                </ul>
+               <a href="#" onclick="toogleNav()"><i class="fas fa-bars" id="header-toggle"></i></a>
           </nav>
 
      </div>
 
-          <div class="box_title fadeIn" id="inicio">
+     <section class="presentation">
+          <div class="fadeIn">
                <h1>O Gambito em Berlim</h1>
+               <h2>O fenômeno que impulsionou o xadrez. Conheça Berlim, a capital da Alemanha onde diversas cenas
+                    da série "O
+                    Gambito da Rainha" foram gravadas. Disponível na Netflix™.</h2>
           </div>
 
-     <div class="box_subtitle">
-          <h2>O fenômeno que impulsionou o xadrez. Conheça Berlim, a capital da Alemanha onde diversas cenas da série "O
-               Gambito da Rainha" foram gravadas. Disponível na Netflix™.</h2>
-     </div>
-
-     <div class="box_image"> <img src="./images/beth.png" alt="O Gambito da Rainha" width="850"> </div>
-
+          <div class="presentation_image"> <img class="bethImg" src="./images/beth.png" alt="O Gambito da Rainha"> </div>
+     </section>
+     
      <div class="container_about" id="sobre">
           <div class="box">
                <h3>Sobre Berlim </h3>
@@ -97,8 +101,8 @@
                <p>Brandemburger Tor</p>
           </div>
      </div>
-     </div>
-     </div>
+
+     <script src="./js/app.js"></script>
 
 </body>
 

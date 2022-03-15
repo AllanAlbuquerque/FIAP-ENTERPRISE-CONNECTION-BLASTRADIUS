@@ -44,8 +44,13 @@
   background: transparent;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /** corpo do site e seu fundo **/
 body {
+  margin: 0;
   background-color: #000;
   background-image: url(../images/fundoo.png);
   background-repeat: no-repeat;
@@ -70,8 +75,7 @@ body {
 }
 
 .container_about {
-  width: 100% auto;
-  height: auto;
+  width: 100%;
   backdrop-filter: blur(9px) saturate(0%);
   -webkit-backdrop-filter: blur(9px) saturate(0%);
   background-color: rgba(0, 0, 0, 0.50);
@@ -96,7 +100,37 @@ body {
   align-items: center;
 }
 
+.menu > a {
+  margin-right: 1rem;
+  display: none;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu ul {display: none !important;}
+  .menu > a {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* .menu.responsive {position: relative;} */
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive ul {
+    float: none;
+    display: block !important;
+    text-align: left;
+  }
+}
+
 .menu {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 0;
 }
@@ -135,21 +169,20 @@ body {
 
 /** título principal **/
 h1 {
+  margin: 10rem 0 1rem 0;
   font-family: 'League Spartan', sans-serif;
-  font-size: 13vh;
+  font-size: 7rem;
   font-weight: 900;
   color: #fff;
-  letter-spacing: 4px;
 }
 
 /** subtitulo logo abaixo do título **/
 h2 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 2.5vh;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: 100;
   letter-spacing: 1px;
-  line-height: 3.5vh;
 }
 
 /** título do container para começar conteúdo **/
@@ -168,40 +201,60 @@ h3 {
 .box {
   margin: auto;
   display: block;
-  justify-content: center;
-  align-items: center;
 }
 
-/** posicionamento do título principal **/
-.box_title {
-  width: 40%;
+.presentation {
+  margin-top: 12rem;
   display: flex;
-  margin-left: 8%;
-  margin-top: 190px;
-  margin-bottom: -70px;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
-/** posicionamento do subtítulo principal **/
-.box_subtitle {
-  width: 66vh;
-  display: flex;
-  flex-direction: row;
-  margin-left: 8%;
+.bethImg {
+  width: 67rem;
+  height: auto;
 }
 
-/** posicionamento da imagem da atriz **/
-.box_image {
-  margin-top: -31%;
-  margin-left: 100vh;
-  margin-bottom: -20vh;
-}
+@media screen and (max-width: 1700px) {
+  .bethImg {
+    width: 55rem;
+    height: auto;
+  }
+} 
+
+@media screen and (max-width: 1500px) {
+  .bethImg {
+    width: 50rem;
+    height: auto;
+  }
+} 
+
+@media screen and (max-width: 1366px) {
+  .bethImg {
+    width: 40rem;
+    height: auto;
+  }
+} 
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    margin: 0 0 1rem 0;
+  }
+  .presentation {
+    flex-direction: column;
+  }
+  .bethImg {
+    width: 100%;
+    height: auto;
+  }
+} 
 
 /** posicionamento e tamanho do logo do gambito em cima **/
 .box_logo {
   display: flex;
   position: fixed;
   height: 4rem;
-  margin: auto 5rem;
+  margin: auto 2rem;
   z-index: 999;
 }
 
