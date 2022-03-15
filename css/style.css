@@ -1,205 +1,248 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Clicker+Script&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400&display=swap');
 
 /** personalização da barra de rolagem **/
 ::-webkit-scrollbar {
-    width: 11px;
-    height: 11px;
-  }
-  ::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #737373;
-    border: 0px none #ffffff;
-    border-radius: 50px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #545454;
-  }
-  ::-webkit-scrollbar-thumb:active {
-    background: #9c9c9c;
-  }
-  ::-webkit-scrollbar-track {
-    background: #2e2e2e;
-    border: 0px none #ffffff;
-    border-radius: 0px;
-  }
-  ::-webkit-scrollbar-track:hover {
-    background: #303030;
-  }
-  ::-webkit-scrollbar-track:active {
-    background: #333333;
-  }
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #545454;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #9c9c9c;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #303030;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 
 /** corpo do site e seu fundo **/
 body {
-    background-color: #000;
-    background-image: url(../images/fundo4.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    overflow-x: hidden;
+  background-color: #000;
+  background-image: url(../images/fundoo.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  margin-left: 0;
 }
 
-/** container principal central com efeito vidro **/ 
+/** container principal central com efeito vidro **/
 .container {
-    width: 1510px;
-    height: 100%;
-    backdrop-filter: blur(9px) saturate(0%);
-    -webkit-backdrop-filter: blur(9px) saturate(0%);
-    background-color: rgba(0, 0, 0, 0.50);
-    border-radius: 0px;
-    margin-top: -10px;
-    display: flex;
+  width: 100% auto;
+  height: auto;
+  backdrop-filter: blur(9px) saturate(0%);
+  -webkit-backdrop-filter: blur(9px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.50);
+  border-radius: 0px;
+  margin-top: 10px;
+  padding: 35px 0px 0px 0px;
+  display: flex;
+}
+
+.container_about {
+  width: 100% auto;
+  height: auto;
+  backdrop-filter: blur(9px) saturate(0%);
+  -webkit-backdrop-filter: blur(9px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.50);
+  border-radius: 0px;
+  display: flex;
+  margin-bottom: 6vh;
+  padding: 5vh;
 }
 
 /** menu acima **/
 .header {
-   backdrop-filter: blur(9px) saturate(0%);
-   -webkit-backdrop-filter: blur(9px) saturate(0%);
-   background-color: rgba(0, 0, 0, 0.367);
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 7%;
-   z-index: 999px;
-   box-shadow: 0px 0px 6px 0px rgba(71, 71, 71, 0.353);
-   text-align: right;
+  backdrop-filter: blur(9px) saturate(0%);
+  -webkit-backdrop-filter: blur(9px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.367);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 999;
+  box-shadow: 0px 0px 6px 0px rgba(71, 71, 71, 0.353);
+  text-align: right;
+  display: block;
 }
 
 .menu ul li {
   display: inline-block;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-right: 20px;
+  margin-top: 10px;
 }
+
 .menu ul li a {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 3px;
-  font-size: 17px;
+  font-size: 16px;
   display: block;
-  color: #FFFFFF;
-  padding: 0px 30px 0px 20px;
+  color: #cacaca;
+  padding: 0px 20px 0px 10px;
   text-decoration: none;
 }
+
 .menu ul li a:hover {
-  color: #969696;
+  color: #c11919c1;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid #c11919c1;
+  padding-bottom: 8px;
+  line-height: 1;
+}
+
+.menu ul li a {
+  transition: all .45s ease-in-out;
 }
 
 /** título principal **/
 h1 {
-    font-family: 'Sora', sans-serif;
-    font-size: 70px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 4px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 13vh;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 4px;
 }
 
 /** subtitulo logo abaixo do título **/
 h2 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 26px;
-    color: #fff;
-    font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5vh;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 3.5vh;
 }
 
 /** título do container para começar conteúdo **/
 h3 {
-font-family:'Quicksand', sans-serif;
-color: #fff;
-font-size: 28px;
-text-align: center;
-font-weight: 500;
-margin-top: 48px;
-margin-bottom: 18px;
-letter-spacing: 1px;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  font-size: 5vh;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
 }
 
 /** ajustes de espaçamento do container principal **/
 .box {
-    margin: auto;
-    display: block;
-    justify-content: center;
-    align-items: center;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 /** posicionamento do título principal **/
 .box_title {
-    width: 700px;
-    display: flex;
-    margin-left: 120px; 
-    margin-top: 230px;
-    margin-bottom: -80px;
+  width: 40%;
+  display: flex;
+  margin-left: 8%;
+  margin-top: 190px;
+  margin-bottom: -70px;
 }
 
 /** posicionamento do subtítulo principal **/
 .box_subtitle {
-    width: 630px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 120px;
-    margin-top: 10px;
+  width: 66vh;
+  display: flex;
+  flex-direction: row;
+  margin-left: 8%;
 }
 
 /** posicionamento da imagem da atriz **/
 .box_image {
-    margin-top: -400px;
-    margin-left: 1010px;
+  margin-top: -31%;
+  margin-left: 100vh;
+  margin-bottom: -20vh;
 }
 
 /** posicionamento e tamanho do logo do gambito em cima **/
 .box_logo {
-    display: flex;
-    position: fixed;
-    width: 5%;
-    height: 5%;
-    top: 8px;
-    margin-left: 20px;
-    z-index: 1;
+  display: flex;
+  position: fixed;
+  width: 60%;
+  height: 60%;
+  margin: 10px 120px;
+  z-index: 999;
 }
 
 /** configurações das imagens dos pontos turísticos **/
 .images {
-    display: inline-block; 
-    opacity: 0.8;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    }
+  display: inline-block;
+  opacity: 0.8;
+  margin-top: 5vh;
+  margin-left: 40px;
+}
 
 .images:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 img {
   border-radius: 10px;
-  }
+}
 
 /** efeito de aparecer a palavra (título) aos poucos quando atualiza a página **/
 .fadeIn {
-    animation: fadeIn 1.5s linear;
+  animation: fadeIn 1.5s linear;
 }
+
 @keyframes fadeIn {
-    from{ opacity: 0;
-    }
-    to{ opacity: 1; 
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /** fonte e posicionamento dos títulos dentro das fotos **/
 p {
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 2;
-    position: absolute;
-    color: #fff;
-    font-size: 26px;
-    text-shadow: 2px 3px 2px #a90000, 2px 3px 3px #b60000, 2px 3px 2px #780000, -1px 5px 5px rgba(0,0,0,0.48);       
-    font-weight:700;
-    top: 260px;  
-    text-align: center;
-    width: 280px;
-    letter-spacing: 1px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 2;
+  position: absolute;
+  color: #fff;
+  font-size: 26px;
+  text-shadow: 2px 3px 2px #a90000, 2px 3px 3px #b60000, 2px 3px 2px #780000, -1px 5px 5px rgba(0, 0, 0, 0.48);
+  font-weight: 700;
+  top: 260px;
+  text-align: center;
+  width: 280px;
+  letter-spacing: 1px;
 }
