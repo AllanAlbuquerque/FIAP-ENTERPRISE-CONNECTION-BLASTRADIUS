@@ -63,15 +63,13 @@ body {
 
 /** container principal central com efeito vidro **/
 .container {
-  width: 100% auto;
-  height: auto;
+  width: 100%;
   backdrop-filter: blur(9px) saturate(0%);
-  -webkit-backdrop-filter: blur(9px) saturate(0%);
   background-color: rgba(0, 0, 0, 0.50);
-  border-radius: 0px;
   margin-top: 10px;
-  padding: 35px 0px 0px 0px;
+  padding: 35px 20px;
   display: flex;
+  flex-direction: column;
 }
 
 .container_about {
@@ -201,7 +199,8 @@ h3 {
 /** ajustes de espaçamento do container principal **/
 .box {
   margin: auto;
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .presentation {
@@ -267,14 +266,15 @@ h3 {
 }
 
 /** configurações das imagens dos pontos turísticos **/
-.images {
-  display: inline-block;
+.image {
   opacity: 0.8;
+  width: 20%;
   margin-top: 9vh;
-  margin-left: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.images:hover {
+.image:hover {
   opacity: 1;
 }
 
@@ -298,16 +298,14 @@ img {
 }
 
 /** fonte e posicionamento dos títulos dentro das fotos **/
-p {
+.image p {
   font-family: 'Quicksand', sans-serif;
-  letter-spacing: 2;
   position: absolute;
+  top: 200px;
   color: #fff;
-  font-size: 26px;
+  font-size: 1.7rem;
   text-shadow: 2px 3px 2px #a90000, 2px 3px 3px #b60000, 2px 3px 2px #780000, -1px 5px 5px rgba(0, 0, 0, 0.48);
   font-weight: 700;
-  top: 260px;
   text-align: center;
-  width: 280px;
-  letter-spacing: 1px;
+  width: min-content;
 }
