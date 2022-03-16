@@ -83,6 +83,12 @@ body {
   padding: 5vh;
 }
 
+.img-carousel {
+  filter: opacity(25%);
+  height: 40rem;
+  width: auto;
+}
+
 /** menu acima **/
 .header {
   backdrop-filter: blur(9px) saturate(0%);
@@ -203,6 +209,17 @@ h3 {
   justify-content: space-evenly;
 }
 
+.box_about {
+  width: 60%;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .box_about {
+    width: 100%;
+  }
+}
+
 .presentation {
   margin-top: 12rem;
   display: flex;
@@ -254,6 +271,16 @@ h3 {
     width: 100%;
     height: auto;
   }
+  .box_tourism {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image {
+    width: unset !important;
+  }
+  .img-paragraph {
+    top: unset !important;
+  }
 } 
 
 /** posicionamento e tamanho do logo do gambito em cima **/
@@ -298,7 +325,7 @@ img {
 }
 
 /** fonte e posicionamento dos títulos dentro das fotos **/
-.image p {
+.img-paragraph {
   font-family: 'Quicksand', sans-serif;
   position: absolute;
   top: 200px;
