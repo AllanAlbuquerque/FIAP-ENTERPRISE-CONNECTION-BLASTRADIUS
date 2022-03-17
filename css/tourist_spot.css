@@ -193,6 +193,7 @@ body {
 
 .images {
   height: 30vh;
+  font-size: 0;
 }
 
 img {
