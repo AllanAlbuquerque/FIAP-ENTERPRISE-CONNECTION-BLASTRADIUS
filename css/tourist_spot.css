@@ -175,14 +175,22 @@ body {
 }
 
 .images {
-    height: 30vh;
-    font-size: 0px;
+  height: 30vh;
+  font-size: 0;
+}
+
+img {
+  opacity: 0.9;
+}
+
+img:hover {
+  opacity: 1;
 }
 
 .spot_images {
-    height: 30vh;
-    width: 33.33%;
-    object-fit: cover;
+  height: 30vh;
+  width: 33.33%;
+  object-fit: cover;
 }
 
 .info {
@@ -270,4 +278,4 @@ h3 {
     display: flex;
     flex-direction: column;
   }
-} 
+}
