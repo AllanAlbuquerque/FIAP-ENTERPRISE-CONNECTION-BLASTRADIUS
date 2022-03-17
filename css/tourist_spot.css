@@ -176,11 +176,12 @@ body {
 
 .images {
     height: 30vh;
+    font-size: 0px;
 }
 
 .spot_images {
     height: 30vh;
-    width: 33%;
+    width: 33.33%;
     object-fit: cover;
 }
 
@@ -206,7 +207,6 @@ h3 {
 
 .half_section {
     width: 46.5%;
-    /* background-color: #444; */
 }
 
 .section_spacing {
@@ -248,3 +248,17 @@ h3 {
     margin-left: 40px;
     margin-top: -16px;
 }
+
+@media screen and (max-width: 700px) {
+    .half_section {
+      width: 100%;
+  }
+
+  .section_spacing {
+      width: 0%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+} 
