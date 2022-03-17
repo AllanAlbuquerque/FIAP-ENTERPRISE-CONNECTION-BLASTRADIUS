@@ -89,7 +89,7 @@ body {
   display: flex;
   position: fixed;
   height: 6.5vh;
-  margin: auto 8rem;
+  margin: auto 5%;
   z-index: 999;
 }
 
@@ -193,6 +193,7 @@ body {
 
 .images {
   height: 30vh;
+  font-size: 0;
 }
 
 img {
@@ -240,7 +241,7 @@ h3 {
 .mapa {
   margin-top: 20px;
   width: 100%;
-  height: 45vh;
+  min-height: 60vh;
   border: 0;
 }
 
@@ -258,24 +259,40 @@ h3 {
 }
 
 .avaliation_content {
-  position: absolute;
+  /* position: absolute; */
   align-self: center;
-  margin: 0 10.5vmin;
+  margin-top: 7%;
+  margin-left: -5%;
   font-weight: 300;
   background-color: #820a0b;
-  border-radius: 15% 0% 0% 15%;
-  padding: .7rem 2rem .7rem 6.5vmin;
-  width: 35%;
+  border-radius: 0% 5% 5% 5%;
+  padding: 1rem 2rem 1rem 6.5vmin;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
 .avaliation_text {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.avaliation_img .person_img {
+.grade {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: solid;
+  margin-top: 10px;
+}
+
+.fa-star {
+  letter-spacing: -5px;
+}
+
+.gray-star {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.person_img {
   border-radius: 50%;
   height: 14.5vmin;
   z-index: 1;

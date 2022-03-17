@@ -347,7 +347,7 @@ h3 {
   display: flex;
   position: fixed;
   height: 6.5vh;
-  margin: auto 8rem;
+  margin: auto 5%;
   z-index: 999;
 }
 
