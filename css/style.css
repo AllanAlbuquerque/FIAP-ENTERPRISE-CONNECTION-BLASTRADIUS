@@ -44,31 +44,18 @@
   background: transparent;
 }
 
-p::selection {
-  color: #fff;
-  background-color: #000000;
-}
-
 * {
   box-sizing: border-box;
 }
 
-p {
-  font-family: 'Quicksand', sans-serif;
-  color: #fff;
-  font-size: 2.4vh !important;
-  font-weight: 400;
-  text-align: left;
-}
-
 /** corpo do site e seu fundo **/
-body, ::selection {
+body {
   margin: 0;
   background-color: #000;
-  background-image: url(../images/background1.png);
-  background-size: cover;
+  background-image: url(../images/fundoo.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-size: cover;
   overflow-x: hidden;
   background-repeat: no-repeat;
   margin-left: 0;
@@ -77,27 +64,28 @@ body, ::selection {
 /** container principal central com efeito vidro **/
 .container {
   width: 100%;
-  backdrop-filter: blur(1px) saturate(0%);
-  background-color: rgba(0, 0, 0, 0.557);
-  margin-top: 0vh;
-  padding: 0px 30px;
+  backdrop-filter: blur(9px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.50);
+  margin-top: 10px;
+  padding: 35px 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 8rem;
 }
 
 .container_about {
   width: 100%;
+  backdrop-filter: blur(9px) saturate(0%);
+  -webkit-backdrop-filter: blur(9px) saturate(0%);
+  background-color: rgba(0, 0, 0, 0.50);
   border-radius: 0px;
   display: flex;
-  margin-bottom: 20vh;
-  margin-top: -32vh;
+  margin-bottom: 6vh;
+  padding: 5vh;
 }
 
 .img-carousel {
-  margin-top: 2vh;
-  filter: opacity(38%);
-  height: 38rem;
+  filter: opacity(25%);
+  height: 40rem;
   width: auto;
 }
 
@@ -109,40 +97,34 @@ body, ::selection {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 8.5vh;
+  height: 10vh;
   z-index: 999;
   box-shadow: 0px 0px 6px 0px rgba(71, 71, 71, 0.353);
   display: flex;
   align-items: center;
-  margin-bottom: 10%;
 }
 
-.menu>a {
+.menu > a {
   margin-right: 1rem;
   display: none;
   color: white;
 }
 
 @media screen and (max-width: 1000px) {
-  .menu ul {
-    display: none !important;
-  }
-
-  .menu>a {
+  .menu ul {display: none !important;}
+  .menu > a {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 1000px) {
-
   /* .menu.responsive {position: relative;} */
   .menu.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-
   .menu.responsive ul {
     float: none;
     display: block !important;
@@ -192,34 +174,32 @@ body, ::selection {
 
 /** título principal **/
 h1 {
-  margin: 8rem 0 0rem 0 !important;
+  margin: 10rem 0 1rem 0 !important;
   font-family: 'League Spartan', sans-serif;
   font-size: 7rem !important;
   font-weight: 900 !important;
   color: #fff;
-  line-height: 7rem !important;
 }
 
 /** subtitulo logo abaixo do título **/
 h2 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 2.4vh !important;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: 100;
   letter-spacing: 1px;
-  line-height: 2rem !important;
 }
 
 /** título do container para começar conteúdo **/
 h3 {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #fff;
-  text-shadow: 0 -1px 2px #FFF, 0 -2px 2px #c11919c1, 2px 2px 2px rgba(206, 89, 55, 0);
-  font-size: 4.5vh !important;
+  font-size: 5vh;
   text-align: center;
-  font-weight: 800;
-  margin-top: 5rem !important;
-  letter-spacing: 2px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
 }
 
 /** ajustes de espaçamento do container principal **/
@@ -241,18 +221,15 @@ h3 {
 }
 
 .presentation {
-  margin-top: 3rem;
+  margin-top: 12rem;
   display: flex;
-  box-sizing: content-box;
-  width: 100%;
-  padding: 4rem 0rem 0rem 8rem;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .bethImg {
-  margin-top: 0rem;
-  width: 60rem;
+  width: 67rem;
   height: auto;
-  margin-left: 3rem;
 }
 
 @media screen and (max-width: 1700px) {
@@ -260,63 +237,58 @@ h3 {
     width: 55rem;
     height: auto;
   }
-}
+} 
 
 @media screen and (max-width: 1500px) {
   .bethImg {
     width: 50rem;
     height: auto;
   }
-}
+} 
 
 @media screen and (max-width: 1366px) {
   .bethImg {
     width: 40rem;
     height: auto;
   }
-}
+} 
 
 @media screen and (max-width: 1300px) {
   h1 {
     font-size: calc(1.375rem + 1.5vw) !important;
   }
-}
+} 
 
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: calc(1.375rem + 1.5vw);
     margin: 0 0 1rem 0;
   }
-
   .presentation {
     flex-direction: column;
   }
-
   .bethImg {
     width: 100%;
     height: auto;
   }
-
   .box_tourism {
     flex-direction: column;
     justify-content: center;
   }
-
   .image {
     width: unset !important;
   }
-
   .img-paragraph {
     top: unset !important;
   }
-}
+} 
 
 /** posicionamento e tamanho do logo do gambito em cima **/
 .box_logo {
   display: flex;
   position: fixed;
-  height: 6.5vh;
-  margin: auto 8rem;
+  height: 8vh;
+  margin: auto 2rem;
   z-index: 999;
 }
 
