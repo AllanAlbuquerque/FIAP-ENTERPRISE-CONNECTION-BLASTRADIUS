@@ -62,7 +62,8 @@ p {
 }
 
 /** corpo do site e seu fundo **/
-body, ::selection {
+body,
+::selection {
   margin: 0;
   background-color: #000;
   background-image: url(../images/background1.png);
@@ -117,7 +118,7 @@ body, ::selection {
   margin-bottom: 10%;
 }
 
-.menu>a {
+.menu > a {
   margin-right: 1rem;
   display: none;
   color: white;
@@ -128,14 +129,13 @@ body, ::selection {
     display: none !important;
   }
 
-  .menu>a {
+  .menu > a {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 1000px) {
-
   /* .menu.responsive {position: relative;} */
   .menu.responsive .icon {
     position: absolute;
@@ -182,12 +182,12 @@ body, ::selection {
   text-decoration: none;
   font-weight: 700;
   border-bottom: 2px solid #c11919c1;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   line-height: 1;
 }
 
 .menu ul li a {
-  transition: all .45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
 /** título principal **/
@@ -214,7 +214,7 @@ h2 {
 h3 {
   font-family: 'League Spartan', sans-serif;
   color: #fff;
-  text-shadow: 0 -1px 2px #FFF, 0 -2px 2px #c11919c1, 2px 2px 2px rgba(206, 89, 55, 0);
+  text-shadow: 0 -1px 2px #fff, 0 -2px 2px #c11919c1, 2px 2px 2px rgba(206, 89, 55, 0);
   font-size: 4.5vh !important;
   text-align: center;
   font-weight: 800;
@@ -222,6 +222,12 @@ h3 {
   letter-spacing: 2px;
 }
 /** Carousel **/
+iframe {
+  margin-top: 2vh;
+  height: 38rem;
+  width: 100%;
+}
+
 .berlim-captions {
   right: 10% !important;
   left: 10% !important;
