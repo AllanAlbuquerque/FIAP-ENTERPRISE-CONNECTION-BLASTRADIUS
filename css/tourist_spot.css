@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+/** personalização da barra de rolagem **/
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #545454;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #9c9c9c;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #303030;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'quicksand';
+}
+
+/** corpo do site e seu fundo **/
+body {
+    padding-top: 10vh;
+  margin: 0;
+  background-color: #000;
+  background-image: url(../images/fundoo.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/** menu acima **/
+.header {
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    background-color: rgba(0, 0, 0, 0.367);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 999;
+    box-shadow: 0px 0px 6px 0px rgba(71, 71, 71, 0.353);
+    display: flex;
+    align-items: center;
+  }
+
+  /** posicionamento e tamanho do logo do gambito em cima **/
+.box_logo {
+    display: flex;
+    position: fixed;
+    height: 8vh;
+    margin: auto 2rem;
+    z-index: 999;
+  }
+  
+  .menu > a {
+    margin-right: 1rem;
+    display: none;
+    color: white;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .menu ul {display: none !important;}
+    .menu > a {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    /* .menu.responsive {position: relative;} */
+    .menu.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu.responsive ul {
+      float: none;
+      display: block !important;
+      text-align: left;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+  }
+  
+  .menu li {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  
+  .menu ul li a {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.125rem;
+    color: #cacaca;
+    padding: 0px 20px 0px 10px;
+    text-decoration: none;
+  }
+  
+  .menu ul li a:hover {
+    color: #c11919c1;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 2px solid #c11919c1;
+    padding-bottom: .5rem;
+    line-height: 1;
+  }
+  
+  .menu ul li a {
+    transition: all .45s ease-in-out;
+  }
+
+.container {
+    margin: 30px auto 30px auto;
+    backdrop-filter: blur(9px);
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 92vw;
+}
+
+.container h1 {
+    font-family: 'teko';
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 2px 2px #aaa, 4px 4px #666, 6px 6px #333;
+    padding-top: 25px;
+}
+
+.images {
+    height: 30vh;
+}
+
+.spot_images {
+    height: 30vh;
+    width: 33%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 1.6vw 6vw 0 6vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p {
+    color: #fff;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #bb0a1e;
+    text-transform: uppercase;
+}
+
+.half_section {
+    width: 46.5%;
+    /* background-color: #444; */
+}
+
+.section_spacing {
+    width: 7%;
+}
+
+.mapa {
+    margin-top: 20px;
+    width: 100%;
+    height: 45vh;
+    border: 0;
+}
+
+.avaliation {
+    background-color: #820a0b;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.person_name {
+    color: #f5b064;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.avaliation_text {
+    align-items: center;
+    margin: auto 3.5rem;
+    font-weight: 300;
+}
+
+.person_img {
+    border-radius: 50%;
+    height: 13vh;
+    position: absolute;
+    left: 1px;
+    margin-left: 40px;
+    margin-top: -16px;
+}
