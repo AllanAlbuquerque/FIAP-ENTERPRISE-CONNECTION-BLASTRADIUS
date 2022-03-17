@@ -241,7 +241,7 @@ h3 {
 .mapa {
   margin-top: 20px;
   width: 100%;
-  height: 45vh;
+  min-height: 60vh;
   border: 0;
 }
 
