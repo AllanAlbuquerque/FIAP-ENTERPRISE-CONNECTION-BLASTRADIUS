@@ -366,6 +366,17 @@ iframe {
   justify-content: center;
 }
 
+.image a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.image p {
+  margin-top: 5vh;
+  font-size: 1rem;
+}
+
 .image:hover {
   opacity: 1;
 }
