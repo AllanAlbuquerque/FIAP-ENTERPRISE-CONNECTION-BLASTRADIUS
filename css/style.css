@@ -229,8 +229,12 @@ iframe {
 }
 
 .berlim-captions {
-  right: 10% !important;
-  left: 10% !important;
+  right: 1rem !important;
+  left: 1rem !important;
+}
+
+.berlim-captions > p {
+  margin: 0 5rem 1rem 5rem;
 }
 
 .berlim-infos {
@@ -366,21 +370,6 @@ iframe {
   justify-content: center;
 }
 
-.image a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-}
-
-.image p {
-  margin-top: 5vh;
-  font-size: 1rem;
-}
-
-.image:hover {
-  opacity: 1;
-}
-
 img {
   border-radius: 10px;
 }
@@ -402,13 +391,32 @@ img {
 
 /** fonte e posicionamento dos títulos dentro das fotos **/
 .img-paragraph {
+  display: none;
   font-family: 'Quicksand', sans-serif;
   position: absolute;
-  top: 200px;
-  color: #fff;
-  font-size: 1.7rem;
-  text-shadow: 2px 3px 2px #a90000, 2px 3px 3px #b60000, 2px 3px 2px #780000, -1px 5px 5px rgba(0, 0, 0, 0.48);
-  font-weight: 700;
+  align-self: center;
+  color: #DAA45C;
+  text-shadow: 2px 2px 3px #000;
+  font-size: 2rem !important;
+  font-weight: 900;
   text-align: center;
   width: min-content;
+}
+
+.img-thumbnail:hover {
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+#img-bode:hover .bode {
+  display: block !important;
+}
+#img-mauer:hover .mauer {
+  display: block;
+}
+#img-reich:hover .reich {
+  display: block;
+}
+#img-tor:hover .tor {
+  display: block;
 }
