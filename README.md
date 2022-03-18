@@ -1,2 +1,4 @@
 # FIAP-ENTERPRISE-CONNECTION-BLASTRADIUS
+## developed by @AllanAlbuquerque, @fabriciosw and @helobotelhoc
+
 Desafio BlastRadius  Esta é uma atividade que pode ser desenvolvida de forma individual ou em grupo de, no máximo, cinco (5) integrantes.  O Case Gulliver Traveller nos trará desafios diários de como desenvolver um portal que concentre informações diversas sobre turismo, de modo que não seja apenas mais um site no universo web.  Visualizando esse cenário e tendo como base os nossos estudos sobre HTML e CSS, desenvolva uma página/site que apresente algum ou alguns pontos turísticos que foram citados/representados em alguma série ou filme. A ideia é que sua página/site esteja altamente customizada para a série ou o filme, como, por exemplo, utilizar personagens para explicar ou formatar a sua página/site.  Em relação ao ponto turístico, explore: horário de funcionamento, melhor época para visita, fato histórico, duração, valor, entre outros dados.
