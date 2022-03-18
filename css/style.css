@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Clicker+Script&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400;700&display=swap');
 
 /** personalização da barra de rolagem **/
 ::-webkit-scrollbar {
@@ -239,7 +239,7 @@ iframe {
 
 .berlim-infos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -249,18 +249,30 @@ iframe {
   column-gap: 1rem;
 }
 
+
+
 .info-body p {
   text-align: center;
   font-size: unset !important;
   margin-bottom: 0rem;
 }
 
-.info > i {
-  color: #bb0a1e;
-  font-size: 2rem;
+.info-title {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
 }
-.info-body > h6 {
+.info-title > i {
   color: #bb0a1e;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.info-title > h6 {
+  font-weight: 700;
+  color: #bb0a1e;
+  width: min-content;
+  margin-left: .5rem;
+  font-family: 'poppins';
 }
 
 /** ajustes de espaçamento do container principal **/
