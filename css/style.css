@@ -91,8 +91,8 @@ body,
   width: 100%;
   border-radius: 0px;
   display: flex;
-  margin-bottom: 20vh;
-  margin-top: -32vh;
+  margin-bottom: 10vh;
+  margin-top: -28vh;
 }
 
 .img-carousel {
@@ -392,12 +392,13 @@ img {
 /** fonte e posicionamento dos títulos dentro das fotos **/
 .img-paragraph {
   display: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   position: absolute;
   align-self: center;
-  color: #DAA45C;
+  color: #fff;
   text-shadow: 2px 2px 3px #000;
-  font-size: 2rem !important;
+  font-size: 1.7rem !important;
+  letter-spacing: 1px;
   font-weight: 900;
   text-align: center;
   width: min-content;

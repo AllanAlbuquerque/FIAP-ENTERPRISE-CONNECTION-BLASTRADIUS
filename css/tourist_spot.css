@@ -186,9 +186,12 @@ body {
 }
 
 .banner_img {
-  width: 30vh !important;
   position: fixed;
-  z-index: 999 !important;
+width: 34vh;
+  z-index: 100;
+  right: 0pt;
+  float: right;
+  bottom: 0pt;
 }
 
 .images {
