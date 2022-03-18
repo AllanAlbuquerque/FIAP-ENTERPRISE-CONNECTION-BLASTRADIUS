@@ -215,7 +215,7 @@ h3 {
   font-family: 'League Spartan', sans-serif;
   color: #fff;
   text-shadow: 0 -1px 2px #fff, 0 -2px 2px #c11919c1, 2px 2px 2px rgba(206, 89, 55, 0);
-  font-size: 4.5vh !important;
+  font-size: 6vh !important;
   text-align: center;
   font-weight: 800;
   margin-top: 5rem !important;
@@ -391,12 +391,13 @@ img {
 
 /** fonte e posicionamento dos títulos dentro das fotos **/
 .img-paragraph {
-  display: none;
+  /* display: none; */
   font-family: 'League Spartan', sans-serif;
   position: absolute;
+  top: 36vh;
   align-self: center;
   color: #fff;
-  text-shadow: 2px 2px 3px #000;
+  text-shadow: 2px 2px 2px #000;
   font-size: 1.7rem !important;
   letter-spacing: 1px;
   font-weight: 900;
@@ -404,20 +405,14 @@ img {
   width: min-content;
 }
 
-.img-thumbnail:hover {
-  filter: grayscale(1);
-  cursor: pointer;
+.image a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
 }
 
-#img-bode:hover .bode {
-  display: block !important;
-}
-#img-mauer:hover .mauer {
-  display: block;
-}
-#img-reich:hover .reich {
-  display: block;
-}
-#img-tor:hover .tor {
-  display: block;
+.img-thumbnail:hover {
+  filter: grayscale(.6);
+  cursor: pointer;
 }
